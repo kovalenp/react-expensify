@@ -1,11 +1,9 @@
-import React from 'react'
-import ExpesnseForm from './ExpenseForm'
+import React from 'react';
 import { connect } from 'react-redux';
-import { addExpense } from '../actions/expenses'
-import { dispatch } from 'rxjs/internal/observable/pairs';
+import ExpesnseForm from './ExpenseForm';
+import { addExpense } from '../actions/expenses';
 
-const AddExpensePage = (props) => {
-  return (
+const AddExpensePage = props => (
     <div>
       <p>Add expense Page.</p>
       <ExpesnseForm onSubmit={(expense) => {
@@ -13,7 +11,6 @@ const AddExpensePage = (props) => {
         props.history.push('/');
       }}/>
     </div>
-  );
-}
+);
 
 export default connect()(AddExpensePage);

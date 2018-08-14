@@ -3,10 +3,10 @@ const filterReducerDefaultState = {
   sortBy: 'date',
   startDate: undefined,
   endDate: undefined,
-}
+};
 
 const filterReducer = (state = filterReducerDefaultState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'SET_TEXT_FILTER':
       return {
         ...state,
