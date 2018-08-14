@@ -1,6 +1,6 @@
 {
   "name": "expensify",
-  "version": "0.7.1",
+  "version": "0.7.3",
   "description": "",
   "main": "index.js",
   "author": "Pavel Kovalenko <pavel@kovalenko.cz>",
