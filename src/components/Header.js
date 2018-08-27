@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => (
   <div>
     <header>
-      Expensify
+      Expensify App
     </header>
       <NavLink activeClassName='selected-menu' exact to='/'>Home</NavLink>
       <NavLink activeClassName='selected-menu' to='/create'>Add Expense</NavLink>
