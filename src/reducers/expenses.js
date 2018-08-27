@@ -1,10 +1,12 @@
+import expenses from '../enums/expenses';
+
 const expenseReducer = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_EXPENSE':
+    case expenses.ADD_EXPENSE:
       return [...state, action.expense];
-    case 'REMOVE_EXPENSE':
+    case expenses.REMOVE_EXPENSE:
       return state.filter(e => e.id !== action.id);
-    case 'EDIT_EXPENSE':
+    case expenses.EDIT_EXPENSE:
       return state.map((e) => {
         if (e.id === action.id) {
           return {
